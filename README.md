@@ -5,4 +5,6 @@
 #### 📅 10.22 작곡소프트웨어 발표<br>
 * 작곡소프트웨어.pdf
 #### 📅 10.23 멘토링 및 사업계획서 작성, 프로토타입 장면 연결 시작<br>
-qnpr
+#### 📅 10.24 프로토타입 1차 완성<br>
+* Adobe XD 활용해 구현<br>
+  - 1024 <br>https://xd.adobe.com/view/6d4ea879-0b66-4ed4-bbe9-1455d4917689-381d/?fullscreen&hints=off
