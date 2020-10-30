@@ -8,3 +8,4 @@
 #### 📅 10.24 프로토타입 1차 완성<br>
 * Adobe XD 활용해 구현<br>
   - 1024 <br>https://xd.adobe.com/view/6d4ea879-0b66-4ed4-bbe9-1455d4917689-381d/?fullscreen&hints=off
+#### 📅 10.30 사업계획서 제출 및 중간발표 자료(+ 창업경진대회 본선진출)<br>
