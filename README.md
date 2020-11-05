@@ -11,3 +11,4 @@
 #### 📅 10.30 사업계획서 제출 및 중간발표 자료(+ 창업경진대회 본선진출)<br>
 #### 📅 11.03 중간발표<br>
 * <https://github.com/danbom/capstonedesign/blob/main/airang.pdf>
+#### 📅 11.06 창업 경진 대회 발표<br>
