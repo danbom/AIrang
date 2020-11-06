@@ -12,3 +12,4 @@
 #### 📅 11.03 중간발표<br>
 * <https://github.com/danbom/capstonedesign/blob/main/airang.pdf>
 #### 📅 11.06 창업 경진 대회 발표<br>
+* 장려상 수상
