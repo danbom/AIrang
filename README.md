@@ -18,3 +18,4 @@
 * 알고리즘 : https://docs.google.com/spreadsheets/d/1LDNTvfOhnJw_W6Rfeia6OdszMlUh3J3pT3UqdmKehQ0/edit?usp=sharing
 #### 📅 11.20 작사, 작곡 회의<br>
 * https://docs.google.com/spreadsheets/d/1LDNTvfOhnJw_W6Rfeia6OdszMlUh3J3pT3UqdmKehQ0/edit#gid=1287511031
+#### 📅 11.27 2차 멘토링<br>
