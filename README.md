@@ -8,13 +8,16 @@
 #### :space_invader: 팀원 기술블로그 주소
 * 김선우
   - 작곡 알고리즘, 프론트엔드
+  - https://sunwoo-725.tistory.com/<br>
 * 김채윤
   - 작곡 알고리즘, 백엔드
+  - https://yunyuno3o.tistory.com/<br>
 * 민은영
   - 작사 알고리즘, 프론트엔드
   - https://blog.naver.com/bear0369<br>
 * 정혜민
   - 작사 알고리즘, 백엔드
+  - https://codeinleonis.tistory.com/<br>
 #### :book: 참고
 * 음성 데이터셋
 https://github.com/danbom/emotiontts_open_db
