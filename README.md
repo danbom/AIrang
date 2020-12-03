@@ -10,6 +10,7 @@
   - 작곡 알고리즘, 프론트엔드
 * 김채윤
   - 작곡 알고리즘, 백엔드
+  - https://yunyuno3o.tistory.com/<br>
 * 민은영
   - 작사 알고리즘, 프론트엔드
   - https://blog.naver.com/bear0369<br>
