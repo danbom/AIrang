@@ -27,6 +27,8 @@ https://github.com/danbom/soynlp
 https://github.com/lovit/KR-WordRank
 * 마르코프 체인 작곡
 https://github.com/danbom/MarkovMusic
+* Magenta 작곡(RNN)
+https://github.com/magenta/magenta
 * 작사 알고리즘 참고
 https://github.com/danbom/hiphop
 
@@ -46,7 +48,8 @@ https://github.com/danbom/hiphop
 #### 📅 11.06 창업 경진 대회 발표<br>
 * 장려상 수상
 #### 📅 11.13 추가 데이터셋, 알고리즘 회의<br>
-* 데이터셋(은영,혜민) : https://docs.google.com/spreadsheets/d/1ot7RgS7kaz1GI-OhT3EXO5I805EZs1rsqfFV1MLsa60/edit?usp=sharing
+* 작사 데이터셋(은영,혜민) : https://docs.google.com/spreadsheets/d/1ot7RgS7kaz1GI-OhT3EXO5I805EZs1rsqfFV1MLsa60/edit?usp=sharing
+* 작곡 데이터셋(선우,채윤) : https://docs.google.com/document/d/1D_6VYXj-haVLZm-3O4KSS6XG96-zDQht/edit
 * 알고리즘 : https://docs.google.com/spreadsheets/d/1LDNTvfOhnJw_W6Rfeia6OdszMlUh3J3pT3UqdmKehQ0/edit?usp=sharing
 #### 📅 11.20 작사, 작곡 회의<br>
 * https://docs.google.com/spreadsheets/d/1LDNTvfOhnJw_W6Rfeia6OdszMlUh3J3pT3UqdmKehQ0/edit#gid=1287511031
