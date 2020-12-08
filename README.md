@@ -55,3 +55,4 @@ https://github.com/danbom/hiphop
 * https://docs.google.com/spreadsheets/d/1LDNTvfOhnJw_W6Rfeia6OdszMlUh3J3pT3UqdmKehQ0/edit#gid=1287511031
 #### 📅 11.27 2차 멘토링<br>
 #### 📅 12.03 AIrang 깃허브 리모델링<br>
+#### 📅 12.08 AIrang <br>
