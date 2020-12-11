@@ -31,6 +31,8 @@ https://github.com/danbom/MarkovMusic
 https://github.com/magenta/magenta
 * 작사 알고리즘 참고
 https://github.com/danbom/hiphop
+* 작사 알고리즘 참고 2
+https://github.com/forus-ai/KoGPT2-Lyrics-Generation-FineTuning-Version1
 
 ### 2020 졸업프로젝트 진행 과정<br>
 #### 📅 10.16 프로토타입 만들기 시작<br>
