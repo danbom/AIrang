@@ -29,6 +29,7 @@ https://github.com/lovit/KR-WordRank
 https://github.com/danbom/MarkovMusic
 * 마젠타 작곡(RNN)
 https://github.com/magenta/magenta
+https://colab.research.google.com/notebooks/magenta/hello_magenta/hello_magenta.ipynb
 * 작사 알고리즘 참고
 https://github.com/danbom/hiphop
 
