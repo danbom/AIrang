@@ -5,7 +5,6 @@
 모두를 위한 동요 창작 AI, AIRANG
 인공지능을 통해 보다 많은 동요를 누구나 손쉽고 빠르게 작사 작곡
 #### :tv: AIrang 시연영상 링크 : https://www.youtube.com/watch?v=_yRwkHZCLmI
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_yRwkHZCLmI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #### :space_invader: 팀원 기술블로그 주소
 * 김선우
   - 작곡 알고리즘, 프론트엔드
