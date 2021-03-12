@@ -20,6 +20,6 @@ h6 {
 .bgimg {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("default_p.jpg");
+  background-image: url("/public/default_p.jpg");
   min-height: 100%;
 }
