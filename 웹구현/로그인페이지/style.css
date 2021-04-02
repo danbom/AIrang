@@ -92,7 +92,7 @@ body::before {
 .int-area input:valid + label {
   top: -2px;
   font-size: 13px;
-  color: #166cea;
+  color: #fff;
 }
 
 .btn-area {
