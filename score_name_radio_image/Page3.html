@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Page3</title>
+        <link rel="stylesheet" href="style.css">
+        <!--<script src="jquery-3.4.1.js"></script>-->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+      <div class="info">
+        <h1>동요 생성</h1>
+        <h3>프로젝트 이름</h3>
+      </div>
+      <section class="login-form">
+        <h2>프로젝트 이름을 설정해주세요.</h2>
+        <form action="">
+          <div class="int-area">
+            <input type="text" name-="songTitle" id="songTitle"
+                    autocomplete="off" required/>
+            <label for="id">프로젝트 이름</label>
+          </div>
+        </form>
+      </section>
+        <div class="btn-area">
+          <button id="btn" type="submit"><img class="playBtn" src="./playBtn.png"/>다음</button>
+        </div>
+
+
+        <script>
+            let songTitle = $('#songTitle');
+            let btn = $('#btn');
+
+            $(btn).on('click',function(){
+                if($(songTitle).val() == "") {
+                    $(songTitle).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    },1500);
+                }
+            });
+        </script>
+    </body>
+</html>

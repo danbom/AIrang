@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Page3-2</title>
+        <link rel="stylesheet" href="style.css">
+        <!--<script src="jquery-3.4.1.js"></script>-->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+      <div class="info">
+        <h1>동요 생성</h1>
+        <h3>노래 선택</h3>
+      </div>
+      <section class="login-form">
+        <h2>최종 노래를 선택해주세요.</h2>
+        <div class="row">
+          <div class="radio">
+            <input type="radio" id="song1" name="song" value="song1">
+          </div>
+          <div class="column" id="soundTag1"></div>
+        </div>
+        <div class="row">
+          <div class="radio">
+            <input type="radio" id="song2" name="song" value="song2">
+          </div>
+          <div class="column" id="soundTag2"></div>
+        </div>
+        <div class="row">
+          <div class="radio">
+            <input type="radio" id="song3" name="song" value="song3">
+          </div>
+          <div class="column" id="soundTag3"></div>
+        </div>
+      </section>
+        <div class="btn-area">
+          <button id="btn" type="submit"><img class="playBtn" src="./playBtn.png"/>다음</button>
+        </div>
+
+        <script>
+        document.getElementById("soundTag1").innerHTML = "<audio controls volume preload='none' src='http://www.sousound.com/music/healing/healing_01.mp3'></audio>";
+        document.getElementById("soundTag2").innerHTML = "<audio controls volume preload='none' src='http://www.sousound.com/music/healing/healing_01.mp3'></audio>";
+        document.getElementById("soundTag3").innerHTML = "<audio controls volume preload='none' src='http://www.sousound.com/music/healing/healing_01.mp3'></audio>";
+        </script>
+    </body>
+</html>
