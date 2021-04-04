@@ -11,8 +11,9 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 100vh;
-  background: url("image0.jpg") no-repeat center;
+  background: url("background2.png") no-repeat center;
   background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 body::before {
@@ -23,15 +24,20 @@ body::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.0);
+  /* background-color: rgba(0,0,0,0.1); */
 }
-.playBtn{
+
+.nextBtn{
   width:15px;
   margin-right: 15px;
 }
 
 .info{
-  margin-bottom: 40%;
+  margin-right: 50%;
+  margin-bottom: auto;
+}
+.info h3{
+  color: #ebb434;
 }
 
 .column{
@@ -57,13 +63,26 @@ audio {
   width:10%;
 }
 
-.score{
+.vertical{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-
+.upside{
+  margin-top: 0px;
+  padding-top: 0px;
+  width: 100%;
+  margin-bottom: auto;
+  align-self: stretch;
+  background-color: #fff;
+}
 
 .login-form {
   position: relative;
   z-index: 2;
+  align-items: center;
+  margin-bottom: auto;
 }
 .login-form h1 {
   font-size: 32px;
@@ -73,7 +92,7 @@ audio {
 }
 .login-form h2 {
   font-size: 18px;
-  color: #fff;
+  color: #ebb434;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -127,20 +146,22 @@ audio {
 .int-area input:valid + label {
   top: -2px;
   font-size: 13px;
-  color: #166cea;
+  color: #ebb434;
 }
 
 .btn-area {
-  margin-top: 37%;
+  margin-left: 50%;
+  margin-bottom: auto;
 }
 .btn-area button {
   width: 200%;
   height: 50px;
-  background: #166cea;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-size: 20px;
-  border: none;
+  border: 2px solid #ebb434;
   border-radius: 25px;
+  font-family: "Noto Sans KR", sans-serif;
   cursor: pointer; /* 위에 커서 놓았을 때 커서 모양 */
 }
 
