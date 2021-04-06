@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-card{
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden
+    position: relative;}
+
+.card-header{
+    font-size: 18px; color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pic{
+    display: inline-block;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.pic img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.btn{
+    width:130px; height: 25px;
+    margin-bottom: 100px;
+    background-color: transparent;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+.profile-footer{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.name{
+    text-align: left;
+    width: 400px;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.email{
+    text-align: left;
+    font-size: 20px;
+    width: 400px;
+    padding-bottom: 20px;
+}
+
+
+.btn-area1{margin-top: 30px}
+
+.btn-area1 button{
+    width:400px; height: 40px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+}
+
+.btn-area1 .del-acc{
+    width: 100%;
+    position: relative;   
+}
+
+
+.btn-area2{
+    margin-top: 20px;
+}
+.btn-area2 button{
+    width:150px; height: 40px;
+    margin: 5px;
+    border: none; 
+    border-radius: 10px;
+    position: relative;
+}
+.bottom-button{
+    width: 100%;
+}
