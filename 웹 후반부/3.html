@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>ㅅ</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!--<script src="jquery-3.4.1.js"></script>-->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <style>
+        /* Create two equal columns that floats next to each other
+        .listContents {
+          float: left;
+          width: 100%;
+          padding-left: 10px;
+        }*/
+        </style>
+    </head>
+    <body class="vertical">
+      <div class="upside">
+        <input type="button" class = "img-button">       
+        <button class="btn" type="submit" style="display: inline-block;">완성</button>
+      </div>
+
+      <!-- 악보 & 가사 파트-->
+      <section class="login-form" display="inline-block">
+        <div style="width:auto; height:600px; float:left; background:white; margin-right:40px; padding-right:30px; border-radius: 10px; overflow: scroll;">
+            <img src="score2.png" style="max-width:512px; height:auto;">
+        </div>
+        <div style="display:inline-block; width:auto; padding-right:30px; ">
+           <h1 style= "color:#2e2e2e; font-size:20px; margin-bottom: 15px; text-align: left;">제목</h1>
+           <form action="">
+           <div class="int-area">
+              <input type="text" style="border-radius: 10px; background: white; color:#2e2e2e; margin-bottom:15px; " name-="songTitle" id="songTitle"
+                      autocomplete="off" required/>
+              <label for="id">필수</label>
+            </div>
+          </form>
+
+          <h1 style="color:#2e2e2e; font-size:20px;margin-bottom:15px; text-align: left;">가사</h1>
+          <form action="">
+            <div class="int-area">
+              <textarea style="border-radius: 10px; background: white; color:#2e2e2e" autocomplete="off" required name-= "description" id="description"></textarea>
+              <label for="id">필수</label>
+            </div>
+          </form>
+        </div>
+    </section>
+
+        <script>
+            
+            let songTitle = $('#songTitle');
+            let description = $('#description');
+            let btn = $('#btn');
+
+            $(btn).on('click',function(){
+                if($(songTitle).val() == "") {
+                    $(songTitle).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    },1500);
+                }
+                if($(description).val() == "") {
+                    $(description).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    },1500);
+                }
+            });
+        </script>
+    </body>
+</html>
