@@ -3,11 +3,51 @@
     <head>
         <meta charset="UTF-8">
         <title>Page3</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="basic_style.css">
+        <link rel="stylesheet" href="score_style.css">
         <!--<script src="jquery-3.4.1.js"></script>-->
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
     </head>
     <body class="vertical">
+      <div class="navigator">
+          <div class="LOGO">
+              AIrang
+          </div>
+          <div class="welcome">
+              USER 님, 환영합니다!
+          </div>
+
+          <div class="profile_playing">
+              <img class= "profile_img" src="odi.jpg">
+          </div>
+
+          <div class="now_playing">
+                  NOW PLAYING - " 별과 고양이 "
+          </div>
+
+
+
+          <!--<div class="playing_btn">
+              <img class="previous_icon" src="Previous.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="current_icon" src="current.svg" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="next_icon" src="next.png" align="middle">
+          </div>-->
+
+          <div class="nav-icon">
+              <img src="profile_icon.svg" align="absmiddle"> &nbsp;&nbsp;&nbsp;&nbsp;내 프로필
+          </div>
+          <div class="nav-icon">
+              <img src="project_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 내 프로젝트
+          </div>
+          <div class="nav-icon">
+              <img src="setting_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 설정
+          </div>
+
+          <div class="nav-footer">
+              <button class="footer-button" type="button">도움말</button>
+              <button class="footer-button" type="button">로그아웃</button>
+
+          </div>
+
+      </div>
       <div class="upside">
         <img src="./backBtn.png"/>
       </div>
@@ -15,8 +55,8 @@
         <h1>동요 생성</h1>
         <h3>프로젝트 이름</h3>
       </div>
-      <section class="login-form">
-        <h2>프로젝트 이름을 설정해주세요.</h2>
+      <section class="center">
+        <h1>프로젝트 이름을 설정해주세요.</h1>
         <form action="">
           <div class="int-area">
             <input type="text" name-="songTitle" id="songTitle"
@@ -26,7 +66,7 @@
         </form>
       </section>
         <div class="btn-area">
-          <button id="btn" type="submit"><img class="nextBtn" src="./playBtn.png"/>다음</button>
+          <button id="btn" type="submit"><img class="nextBtn" src="./current.svg"/>다음</button>
         </div>
 
 
