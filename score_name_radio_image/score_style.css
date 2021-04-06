@@ -32,6 +32,7 @@ body::before {
 }
 
 .info{
+  margin-left: 5%;
   margin-right: 50%;
   margin-bottom: auto;
 }
@@ -42,12 +43,12 @@ body::before {
 
 .column{
   float: left;
-  width: 90%;
+  width: 80%;
   margin-top: 35px;
 }
 audio {
-  width: 700px;
-  display: block;
+  width: 100%;
+  margin-left: 10%;
 }
 /* Clear floats after the columns */
 .row:after {
@@ -59,7 +60,7 @@ audio {
 .radio{
   margin-top: 50px;
   float: left;
-  width:10%;
+  width:10% -1px;
 }
 
 .vertical{
@@ -77,6 +78,8 @@ audio {
 }
 
 .center {
+  margin-left: 18%;
+  width: 60%;
   margin-bottom: auto;
   z-index: 2;
 }
@@ -90,6 +93,7 @@ audio {
   font-size: 18px;
   color: #ebb434;
   text-align: center;
+  margin-right: 10%;
   margin-bottom: 20px;
 }
 .center h3 {
@@ -97,7 +101,15 @@ audio {
   color: #ebb434;
   text-align: center;
   margin-bottom: 0px;
-  margin-left: 100px;
+}
+.smallWidth{
+  width: 26%;
+  margin-left: 10%;
+}
+.score_img{
+  width: 60%;
+  margin-left: 15%;
+  position: relative;
 }
 
 .int-area {
