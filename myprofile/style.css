@@ -91,6 +91,7 @@ body{
     border: none; 
     border-radius: 10px;
     position: relative;
+    background-color: transparent;
 }
 .bottom-button{
     width: 100%;
