@@ -30,72 +30,62 @@ body {
 }
 
 .navigator .LOGO {
-  top: 30px;
+  top: 5%;
   position: relative;
   color: #ffffff;
-  font-size: 34px;
+  font-size: 234%;
   font-weight: bold;
 }
 
 .navigator .welcome {
-  top: 80px;
+  top: 8%;
   position: relative;
   color: #e7e7e7;
-  font-size: 15px;
-}
-
-.navigator .now_playing {
-  top: 140px;
-  left: 30px;
-  position: relative;
-  font-size: 12px;
-  color: #e7e7e7;
-  background: url("now_playing.svg") no-repeat center;
-  background-size: cover;
-  padding: 8px 0;
-  width: 80%;
-  border-radius: 40px;
+  font-size: 90%;
 }
 
 .navigator .profile_playing {
+  top: 13%;
   position: relative;
 }
 
 .navigator .profile_playing .profile_img {
-  top: 190px;
   width: 45%;
   position: relative;
   border-radius: 50%;
 }
 
-.navigator .profile_playing .playing {
-  top: 16px;
-  left: 77px;
-  width: 170px;
-  height: 170px;
+.navigator .now_playing {
+  top: 15%;
+  left: 10%;
   position: relative;
-  border: 8px solid lightgray;
-  border-radius: 50%;
+  font-size: 70%;
+  color: #e7e7e7;
+  background: url("now_playing.svg") no-repeat center;
+  background-size: cover;
+  padding: 2% 0;
+  width: 80%;
+  border-radius: 40px;
 }
 
 .navigator .playing_btn {
-  top: 30px;
+  top: 18%;
   position: relative;
 }
 
 .navigator .nav-icon {
-  top: 250px;
-  left: 50px;
+  top: 45%;
+  left: 10%;
   width: 100%;
   position: relative;
-  padding: 5px;
+  padding: 2%;
   text-align: justify;
-  margin-top: 15px;
+  margin-top: 3%;
 }
 
 .navigator .nav-footer {
   position: relative;
-  top: 300px;
+  top: 52%;
 }
 
 .navigator .nav-footer .footer-button {
@@ -104,19 +94,22 @@ body {
   background-color: transparent;
 }
 
+.body_content {
+  float: right;
+  margin-left: -30%;
+}
+
 .body_content .search-box {
-  margin-top: 30px;
-  right: 280px;
+  margin-top: 5%;
   position: relative;
   background: #ffffff;
-  height: 40px;
   border-radius: 40px;
-  padding: 10px;
+  padding: 5%;
 }
 
 .search-box:hover > .search-txt {
-  width: 240px;
-  padding: 0 15px;
+  width: 100%;
+  padding: 0 20%;
 }
 
 .search-box:hover > .search-btn {
@@ -126,13 +119,8 @@ body {
 .body_content .search-box .search-btn {
   color: #555555;
   float: right;
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   background: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 0.4s;
 }
 
@@ -143,36 +131,38 @@ body {
   float: left;
   padding: 0;
   color: #555555;
-  font-size: 16px;
+  font-size: 85%;
   transition: 0.4s;
-  line-height: 40px;
+  line-height: 30%;
   width: 0px;
 }
 
 .body_content .list_block {
-  width: 200%;
-  transform: translate(-26.5%);
-  margin-top: 25px;
+  width: 220%;
+  margin-top: 5%;
   position: relative;
-  padding: 20px 30px;
+  padding: 5% 15%;
   background: white;
   border: 1px solid transparent;
-  border-radius: 10px;
-  font-size: 15px;
+  border-radius: 5%;
+  font-size: 90%;
   align-items: center;
 }
 
 .body_content .list_block .track .audio {
   width: 50%;
-  margin-top: 15px;
-  margin-right: 30px;
+  margin-top: 1%;
 }
 
 .body_content .list_block .play_btn {
-  font-size: 13px;
+  font-size: 80%;
 }
 
 .body_content .list_block .icon_block {
   position: relative;
   bottom: 25px;
+}
+
+.body_content .list_block .icon_block .play_icon {
+  margin-left: 3%;
 }
