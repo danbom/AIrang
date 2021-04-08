@@ -3,30 +3,56 @@
     <head>
         <meta charset="UTF-8">
         <title>ㅅ</title>
-        <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="basic_style.css">
+        <link rel="stylesheet" href="style_alpha.css">
         <!--<script src="jquery-3.4.1.js"></script>-->
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-        <style>
-        /* Create two equal columns that floats next to each other
-        .listContents {
-          float: left;
-          width: 100%;
-          padding-left: 10px;
-        }*/
-        </style>
     </head>
+    
     <body class="vertical">
-      <div class="upside">
-        <input type="button" class = "img-button">       
+    <!--nav 바-->
+    <div class="navigator">
+        <div class="LOGO">
+            AIrang
+        </div>
+        <div class="welcome">
+            USER 님, 환영합니다!
+        </div>
+        <div class="profile_playing">
+            <img class= "profile_img" src="odi.jpg">
+        </div>
+        <div class="now_playing">
+                NOW PLAYING - " 별과 고양이 "
+        </div>
+        <!--<div class="playing_btn">
+            <img class="previous_icon" src="Previous.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="current_icon" src="current.svg" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="next_icon" src="next.png" align="middle">
+        </div>--> 
+        <div class="nav-icon">
+            <img src="profile_icon.svg" align="absmiddle"> &nbsp;&nbsp;&nbsp;&nbsp;내 프로필
+        </div>
+        <div class="nav-icon">
+            <img src="project_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 내 프로젝트
+        </div>
+        <div class="nav-icon">
+            <img src="setting_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 설정
+        </div>
+        <div class="nav-footer">
+            <button class="footer-button" type="button">도움말</button>
+            <button class="footer-button" type="button">로그아웃</button>
+        </div>
+    </div>
+
+      <div class="upper_bar">
+        <input type="button" class = "img-button">
+        <!--
         <button class="btn" type="submit" style="display: inline-block;">완성</button>
+        -->
       </div>
 
       <!-- 악보 & 가사 파트-->
       <section class="login-form" display="inline-block">
         <div style="width:auto; height:600px; float:left; background:white; margin-right:40px; padding-right:30px; border-radius: 10px; overflow: scroll;">
-            <img src="score2.png" style="max-width:512px; height:auto;">
+            <img src="score_img2.png" style="margin-top:15px;max-width:512px; height:auto;">
         </div>
         <div style="display:inline-block; width:auto; padding-right:30px; ">
            <h1 style= "color:#2e2e2e; font-size:20px; margin-bottom: 15px; text-align: left;">제목</h1>
@@ -46,10 +72,14 @@
             </div>
           </form>
         </div>
+        <div class="confirm-button" style = "margin-top:200px;margin-left:80%">
+            <button id="btn" type="submit"><img class="nextBtn" src="playBtn.png"/>완료</button>
+        </div>
     </section>
 
         <script>
-            
+            document.getElementById("soundTag1").innerHTML = "<audio controls volume preload='none' src='http://www.sousound.com/music/healing/healing_01.mp3'></audio>";
+
             let songTitle = $('#songTitle');
             let description = $('#description');
             let btn = $('#btn');

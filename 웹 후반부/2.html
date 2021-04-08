@@ -3,14 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <title>ㅂ-2</title>
-        <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href="basic_style.css">
+        <link rel="stylesheet" href="style_alpha.css">
         <!--<script src="jquery-3.4.1.js"></script>-->
         <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     </head>
+
     <body class="vertical">
-      <div class="upside">
+      <!--네비 바-->
+        <div class="navigator">
+            <div class="LOGO">
+                AIrang
+            </div>
+            <div class="welcome">
+                USER 님, 환영합니다!
+            </div>
+            <div class="profile_playing">
+                <img class= "profile_img" src="odi.jpg">
+            </div>
+            <div class="now_playing">
+                    NOW PLAYING - " 별과 고양이 "
+            </div>
+            <!--<div class="playing_btn">
+                <img class="previous_icon" src="Previous.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="current_icon" src="current.svg" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="next_icon" src="next.png" align="middle">
+            </div>-->
+            <div class="nav-icon">
+                <img src="profile_icon.svg" align="absmiddle"> &nbsp;&nbsp;&nbsp;&nbsp;내 프로필
+            </div>
+            <div class="nav-icon">
+                <img src="project_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 내 프로젝트
+            </div>
+            <div class="nav-icon">
+                <img src="setting_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 설정
+            </div>
+            <div class="nav-footer">
+                <button class="footer-button" type="button">도움말</button>
+                <button class="footer-button" type="button">로그아웃</button>
+            </div>
+        </div>
+      <div class="upper_bar" style="margin-top:-20px;">
         <input type="button" class = "img-button">
       </div>
       <div class="song-contents">
@@ -20,7 +52,7 @@
       <!-- 악보 & 가사 파트-->
       <section class="song-contents2">
         <div style="width:auto; float:left; padding-right:30px;">
-          <img src="score2.png" style="max-width:512px; height:auto;">
+          <img src="score_img2.png" style="max-width:512px; height:auto;">
         </div>
         <div style="display:inline-block; width:auto; padding-right:30px; ">
           <h2>가사</h2>
@@ -32,8 +64,8 @@
         </div>
       </section>
         <div class="confirm-button">
-          <button id="btn" type="submit" style="margin-right:15px;"><img class="nextBtn" src="playBtn2.png"/>다시 작사하기</button>
-          <button id="btn" type="submit"><img class="nextBtn" src="playBtn2.png"/>다음</button>
+          <button id="btn" type="submit" style="margin-right:15px; background: #ebb434; color:#fff; border: 2px solid #ebb434;"><img class="nextBtn" src="playBtn2.png"/>다시 작사하기</button>
+          <button id="btn" type="submit"><img class="nextBtn" src="playBtn.png"/>다음</button>
         </div>
     </body>
 </html>
