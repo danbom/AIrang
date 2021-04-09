@@ -107,16 +107,10 @@ body {
   padding: 5%;
 }
 
-.search-box:hover > .search-txt {
-  width: 100%;
-  padding: 0 20%;
-}
-
-.search-box:hover > .search-btn {
-  background: white;
-}
-
 .body_content .search-box .search-btn {
+  position: absolute;
+  bottom: 18%;
+  right: 5%;
   color: #555555;
   float: right;
   border-radius: 50%;
