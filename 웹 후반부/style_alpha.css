@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   display: flex;
@@ -14,88 +15,6 @@ body {
   background: url("background2.png") no-repeat center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.1);
-}
-.navigator {
-  width: 18%;
-  height: 100%;
-  /*background: url("nav_bg.svg") no-repeat center;*/
-  background: linear-gradient(#04044a, #fad6a3);
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 1;
-  text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  .navigator {
-    width: 000px;
-  }
-}
-
-.navigator .LOGO {
-  top: 5%;
-  position: relative;
-  color: #ffffff;
-  font-size: 234%;
-  font-weight: bold;
-}
-
-.navigator .welcome {
-  top: 8%;
-  position: relative;
-  color: #e7e7e7;
-  font-size: 90%;
-}
-
-.navigator .profile_playing {
-  top: 13%;
-  position: relative;
-}
-
-.navigator .profile_playing .profile_img {
-  width: 45%;
-  position: relative;
-  border-radius: 50%;
-}
-
-.navigator .now_playing {
-  top: 15%;
-  left: 10%;
-  position: relative;
-  font-size: 70%;
-  color: #e7e7e7;
-  background: url("now_playing.svg") no-repeat center;
-  background-size: cover;
-  padding: 2% 0;
-  width: 80%;
-  border-radius: 40px;
-}
-
-.navigator .playing_btn {
-  top: 18%;
-  position: relative;
-}
-
-.navigator .nav-icon {
-  top: 45%;
-  left: 10%;
-  width: 100%;
-  position: relative;
-  padding: 2%;
-  text-align: justify;
-  margin-top: 3%;
-}
-
-.navigator .nav-footer {
-  position: relative;
-  top: 52%;
-}
-
-.navigator .nav-footer .footer-button {
-  outline: none;
-  border: none;
-  background-color: transparent;
 }
 
 body::before {
@@ -118,6 +37,7 @@ body::before {
   margin-right: 50%;
   margin-bottom: auto;
 }
+
 .info h3{
   margin-top: 5px; /**/
   color: #ebb434;
@@ -149,21 +69,24 @@ audio {
 }
 
 .vertical{
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;
-  align-items: center;
+  /*align-items: center;
   width: 100%;
-  overflow:hidden;
+  overflow:hidden;*/
 }
 
 /*위쪽 흰색 bar*/
 .upper_bar{
-  margin-left:17.4%;
+  
+  margin-left:17%;
   margin-top: -20px;
+  width:84.3%;  
   padding-top: 0px;
   margin-bottom: auto;
   align-self: stretch;
   background-color: #fff;
+
 }
 
 /*로그인 파트에 들어있던 CSS*/
@@ -285,12 +208,22 @@ audio {
   }
 
 .song-contents2 {
+  /*
   margin-right:50%;
   margin-left:50%;
   margin-bottom: auto;
   padding:30px 50px 30px 50px; background:white; 
   width: 1000px; height:auto; overflow:hidden;
-  } 
+  */
+  
+  margin-left: 18%;
+  height:auto;
+  width: 55%;
+  background:white;
+  padding:30px 50px 30px 50px;
+  margin-bottom: auto;
+  z-index: 2;
+} 
 
 .song-contents2.left{
   width:auto; float:left; padding-right:30px; box-sizing:border-box;
@@ -305,7 +238,7 @@ audio {
  .song-contents2 p{color:#404040;font-size:18px;}
 
  .confirm-button{
-  margin-left:25%;
+  margin-left:60%;
   margin-bottom: auto;
           
   }
