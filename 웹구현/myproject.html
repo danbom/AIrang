@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Basic</title>
-    <link rel="stylesheet" href="basic_style.css" />
+    <title>MyProject</title>
+    <link rel="stylesheet" href="myproject_style.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
     <script src="data.js"></script>
@@ -40,11 +40,11 @@
             <img src="project_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 내 프로젝트
         </div>
         <div class="nav-icon">
-            <img src="setting_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 설정
+            <img src="setting_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 도움말
         </div>
 
         <div class="nav-footer">
-            <button class="footer-button" type="button">도움말</button>
+<!--            <button class="footer-button" type="button">도움말</button>-->
             <button class="footer-button" type="button">로그아웃</button>
         
         </div>
@@ -58,6 +58,15 @@
                 <i class="fas fa-search"></i>
             </a>
         </div>
+        
+        
+<!--
+    <div class="header-button">
+    <button class="new" type="button"><img class="new" src="make_project.png"></button>
+    </div>
+-->        
+<!--        <button class="new" type="button"><img class="new" src="make_project.png"></button>-->
+        
         <div class="list"></div>
     </div>
 
@@ -66,6 +75,14 @@
             var list = $(".list");
             var list_block;
             var icon_block;
+            var cre_new_pro;
+            
+            cre_new_pro=$('<div class="cre_new_pro"></div>');
+            list.append(cre_new_pro);
+            
+            cre_new_pro.append(
+                '<img class="create_icon" src="plus.png" align:"middle"><span class="song_title">새 프로젝트 생성하기<p></p></span>');
+            
 
             for (var key in song_list) {
                 list_block = $('<div class="list_block"></div>');
