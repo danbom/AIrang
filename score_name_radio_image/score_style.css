@@ -126,7 +126,7 @@ audio {
 .int-area:first-child {
   margin-top: 0;
 }
-.int-area input { /*here!*/
+.int-area input { 
   width: 100%;
   padding: 20px 10px 10px;
   background-color: transparent;
@@ -136,7 +136,7 @@ audio {
   color: #fff;
   outline: none;
 }
-.int-area label { /*here!*/
+.int-area label {
   position: absolute;
   left: 10px;
   top: 15px;
@@ -144,12 +144,12 @@ audio {
   color: #999;
   transition: all 0.5s ease;
 }
-.int-area label.warning { /*here!*/
+.int-area label.warning {
   color: red !important;
   animation: warning 0.3s ease;
   animation-iteration-count: 3;
 }
-@keyframes warning { /*here!*/
+@keyframes warning {
   0% {
     transform: translateX(-8px);
   }
