@@ -242,7 +242,6 @@ audio {
  .confirm-button{
   margin-left:60%;
   margin-bottom: auto;
-
   }
 
 .confirm-button button{
@@ -255,9 +254,6 @@ audio {
   border-radius: 25px;
   font-family: "Noto Sans KR", sans-serif;
   box-shadow: 2px 2px 5px #5e5e5e;
-  /* 3.html 추가*/
-  margin-left: 40%;
-  margin-top: 20%;
   }
 
 .int-area textarea {
@@ -299,4 +295,8 @@ audio {
 }
 .int-area textarea{
   border-radius: 10px; background: white; color:#2e2e2e;
+}
+.final_confirm{
+  margin-left: 40%;
+  margin-top: 20%;
 }
