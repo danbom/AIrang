@@ -6,8 +6,8 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
   display: flex;
-  margin: 0;
-  padding: 0;
+  margin: 0; /*here!*/
+  padding: 0; /*here!*/
   justify-content: space-around;
   align-items: center;
   height: 100vh;
@@ -67,46 +67,52 @@ audio {
   flex-direction: column;
 }
 
-.upside{
+/*위쪽 흰색 bar*/
+.upper_bar {
   margin-left: 18%;
   margin-top: 0px;
   padding-top: 0px;
-  height: 90px;
   margin-bottom: auto;
   align-self: stretch;
   background-color: #fff;
 }
-
-.center {
+.img-button {
+  background: url("backBtn.svg") no-repeat;
+  border: none;
+  width: 70px;
+  height: 55px;
+  cursor: pointer;
+}
+.center { /*here!*/
   margin-left: 18%;
   width: 60%;
   margin-bottom: auto;
   z-index: 2;
 }
-.center h1 {
+.center h1 { /*here!*/
   font-size: 20px;
   color: #ebb434;
   text-align: center;
   margin-bottom: 60px;
 }
-.center h2 {
+.center h2 { /*here!*/
   font-size: 18px;
   color: #ebb434;
   text-align: center;
   margin-right: 10%;
   margin-bottom: 20px;
 }
-.center h3 {
+.center h3 { /*here!*/
   font-size: 16px;
   color: #ebb434;
   text-align: center;
   margin-bottom: 0px;
 }
-.smallWidth{
+.smallWidth{ /*here!*/
   width: 26%;
   margin-left: 10%;
 }
-.score_img{
+.score_img{ /*here!*/
   width: 60%;
   margin-left: 15%;
   position: relative;
@@ -120,7 +126,7 @@ audio {
 .int-area:first-child {
   margin-top: 0;
 }
-.int-area input {
+.int-area input { /*here!*/
   width: 100%;
   padding: 20px 10px 10px;
   background-color: transparent;
@@ -130,7 +136,7 @@ audio {
   color: #fff;
   outline: none;
 }
-.int-area label {
+.int-area label { /*here!*/
   position: absolute;
   left: 10px;
   top: 15px;
@@ -138,12 +144,12 @@ audio {
   color: #999;
   transition: all 0.5s ease;
 }
-.int-area label.warning {
+.int-area label.warning { /*here!*/
   color: red !important;
   animation: warning 0.3s ease;
   animation-iteration-count: 3;
 }
-@keyframes warning {
+@keyframes warning { /*here!*/
   0% {
     transform: translateX(-8px);
   }
@@ -164,18 +170,20 @@ audio {
   color: #ebb434;
 }
 
-.btn-area {
+.confirm-button {
   margin-left: 60%;
   margin-bottom: auto;
 }
-.btn-area button {
-  width: 200%;
+
+.confirm-button button {
+  width: 200px;
   height: 50px;
   background: #fff;
-  color: #000;
   font-size: 20px;
+  color: #000;
   border: 2px solid #ebb434;
   border-radius: 25px;
   font-family: "Noto Sans KR", sans-serif;
+  /* box-shadow: 2px 2px 5px #5e5e5e; */
   cursor: pointer; /* 위에 커서 놓았을 때 커서 모양 */
 }
