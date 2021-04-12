@@ -6,8 +6,8 @@
 body {
   font-family: "Noto Sans KR", sans-serif;
   display: flex;
-  margin: 0; /*here!*/
-  padding: 0; /*here!*/
+  margin: 0;
+  padding: 0;
   justify-content: space-around;
   align-items: center;
   height: 100vh;
@@ -83,30 +83,36 @@ audio {
   height: 55px;
   cursor: pointer;
 }
-.center { /*here!*/
+.center {
   margin-left: 18%;
   width: 60%;
   margin-bottom: auto;
   z-index: 2;
 }
-.center h1 { /*here!*/
+.center h1 {
   font-size: 20px;
   color: #ebb434;
   text-align: center;
   margin-bottom: 60px;
 }
-.center h2 { /*here!*/
+.center h2 {
   font-size: 18px;
   color: #ebb434;
   text-align: center;
   margin-right: 10%;
   margin-bottom: 20px;
 }
-.center h3 { /*here!*/
+.center h3 {
   font-size: 16px;
   color: #ebb434;
   text-align: center;
   margin-bottom: 0px;
+}
+.center p {
+  color: #404040;
+  font-size: 18px;
+  margin-left: 40%;
+  width: 100%;
 }
 .smallWidth{ /*here!*/
   width: 26%;
@@ -126,7 +132,7 @@ audio {
 .int-area:first-child {
   margin-top: 0;
 }
-.int-area input { 
+.int-area input {
   width: 100%;
   padding: 20px 10px 10px;
   background-color: transparent;
@@ -169,7 +175,18 @@ audio {
   font-size: 13px;
   color: #ebb434;
 }
-
+.int-area textarea {
+  width: 100%;
+  height: 300px;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+}
 .confirm-button {
   margin-left: 60%;
   margin-bottom: auto;
