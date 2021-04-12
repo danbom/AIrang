@@ -118,8 +118,9 @@ audio {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #999;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 18px;
-  color: #fff;
+  color: #2e2e2e;
   outline: none;
 }
 
@@ -163,24 +164,6 @@ audio {
   color: #ebb434;
 }
 
-.btn-area {
-  margin-left: 60%;
-  margin-bottom: auto;
-}
-
-.btn-area button {
-  width: 200%;
-  height: 50px;
-  background: #fff;
-  color: #000;
-  font-size: 20px;
-  border: 2px solid #ebb434;
-  border-radius: 25px;
-  font-family: "Noto Sans KR", sans-serif;
-  cursor: pointer;
-  /* 위에 커서 놓았을 때 커서 모양 */
-}
-
 .img-button {
   background: url("backBtn.svg") no-repeat;
   border: none;
@@ -222,6 +205,12 @@ audio {
   width: 100%;
 }
 
+/*기본 버튼색 지정*/
+:root {
+  --button-color: #000;
+  --button-bg-color: #fff;
+}
+
 .confirm-button {
   margin-left: 60%;
   margin-bottom: auto;
@@ -230,25 +219,32 @@ audio {
 .confirm-button button {
   width: 200px;
   height: 50px;
-  background: #fff;
+  background: var(--button-bg-color);
   font-size: 20px;
-  color: #000;
+  color: var(--button-color);
   border: 2px solid #ebb434;
   border-radius: 25px;
   font-family: "Noto Sans KR", sans-serif;
-  /* box-shadow: 2px 2px 5px #5e5e5e; */
   cursor: pointer; /* 위에 커서 놓았을 때 커서 모양 */
 }
+
+/*2 html의 버튼 - 다시 작사하기*/
+.confirm-button button.re {
+  --button-bg-color: #ebb434; --button-color:#fff;
+}
+
 .int-area input {
   width: 100%;
   padding: 20px 10px 10px;
+  border-radius: 10px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #999;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   outline: none;
 }
+
 .int-area label {
   position: absolute;
   left: 10px;
@@ -296,9 +292,40 @@ audio {
   color: #ebb434;
 }
 
+/*1 html*/
+
+.score {
+  width:auto;
+  float:left;
+  padding-right:30px;
+}
+
+.score img {
+  max-width:512px;
+  height:auto;
+}
+
+.lyrics {
+  display:inline-block;
+  width:auto; 
+  padding-right:30px;
+}
+
+.lyrics p {
+  color:#999;
+}
+
+/*2 html*/
+.lyrics2 {
+  display:inline-block;
+  width:auto; 
+  padding-right:30px;
+}
+
 /*
 3.html추가
 */
+
 .final_score {
   width: 50%;
   height: 100%;
@@ -338,7 +365,7 @@ audio {
   color: #2e2e2e;
   margin-bottom: 15px;
   padding-right: 20px;
-  width: 100%;
+  
 }
 .lyricWhite{
   background: white;

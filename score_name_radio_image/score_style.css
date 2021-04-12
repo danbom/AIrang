@@ -132,14 +132,17 @@ audio {
 .int-area:first-child {
   margin-top: 0;
 }
+
+/*폰트 & 색상 변경사항*/
 .int-area input {
   width: 100%;
   padding: 20px 10px 10px;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #999;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 18px;
-  color: #fff;
+  color: #2e2e2e;
   outline: none;
 }
 .int-area label {
@@ -201,6 +204,5 @@ audio {
   border: 2px solid #ebb434;
   border-radius: 25px;
   font-family: "Noto Sans KR", sans-serif;
-  /* box-shadow: 2px 2px 5px #5e5e5e; */
   cursor: pointer; /* 위에 커서 놓았을 때 커서 모양 */
 }
