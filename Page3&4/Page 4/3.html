@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>ㅅ</title>
+        <link rel="stylesheet" href="basic_style.css">
+        <link rel="stylesheet" href="style_alpha.css">
+        <!--<script src="jquery-3.4.1.js"></script>-->
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+
+    <body class="vertical">
+    <!--nav 바-->
+    <div class="navigator">
+        <div class="LOGO">
+            AIrang
+        </div>
+        <div class="welcome">
+            USER 님, 환영합니다!
+        </div>
+        <div class="profile_playing">
+            <img class= "profile_img" src="odi.jpg">
+        </div>
+        <div class="now_playing">
+                NOW PLAYING - " 별과 고양이 "
+        </div>
+        <!--<div class="playing_btn">
+            <img class="previous_icon" src="Previous.png" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="current_icon" src="current.svg" align="middle">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img class="next_icon" src="next.png" align="middle">
+        </div>-->
+        <div class="nav-icon">
+            <img src="profile_icon.svg" align="absmiddle"> &nbsp;&nbsp;&nbsp;&nbsp;내 프로필
+        </div>
+        <div class="nav-icon">
+            <img src="project_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 내 프로젝트
+        </div>
+        <div class="nav-icon">
+            <img src="setting_icon.svg" align="absmiddle">&nbsp;&nbsp;&nbsp;&nbsp; 도움말
+        </div>
+        <div class="nav-footer">
+            <button class="footer-button" type="button">로그아웃</button>
+        </div>
+    </div>
+
+      <div class="upper_bar">
+        <input type="button" class = "img-button">
+      </div>
+      <div class="info">
+        <h1>프로젝트 완료</h1>
+      </div>
+      <!-- 악보 & 가사 파트-->
+      <section class="center" display="inline-block">
+        <div class="final_score">
+            <img src="score_img2.png"/>
+        </div>
+        <div class="final_info">
+           <h1>제목</h1>
+           <form action="">
+           <div class="int-area bgWhite">
+              <input type="text" name-="songTitle" id="songTitle" autocomplete="off" required/>
+              <label for="id">필수</label>
+            </div>
+          </form>
+
+          <h1>가사</h1>
+          <form action="">
+            <div class="int-area">
+              <textarea autocomplete="off" required name-= "description" id="description"></textarea>
+              <label for="id">필수</label>
+            </div>
+          </form>
+        </div>
+        <div class="confirm-button final_confirm">
+            <button id="btn" type="submit"><img class="nextBtn" src="playBtn.png"/>완료</button>
+        </div>
+    </section>
+
+        <script>
+            let songTitle = $('#songTitle');
+            let description = $('#description');
+            let btn = $('#btn');
+
+            $(btn).on('click',function(){
+                if($(songTitle).val() == "") {
+                    $(songTitle).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    },1500);
+                }
+                if($(description).val() == "") {
+                    $(description).next('label').addClass('warning');
+                    setTimeout(function() {
+                        $('label').removeClass('warning');
+                    },1500);
+                }
+            });
+        </script>
+    </body>
+</html>

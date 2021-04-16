@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  /*background: url("background2.png") no-repeat center;*/
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.1);
+  
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.nextBtn {
+  width: 15px;
+  margin-right: 15px;
+}
+
+.info {
+  margin-left: 5%;
+  margin-right: 50%;
+  margin-bottom: auto;
+}
+
+.info h3 {
+  margin-top: 5px;
+  color: #ebb434;
+}
+
+.column {
+  float: left;
+  width: 80%;
+  margin-top: 35px;
+}
+
+audio {
+  width: 100%;
+  margin-left: 10%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.radio {
+  margin-top: 50px;
+  float: left;
+  width: 10% -1px;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+/*위쪽 흰색 bar*/
+.upper_bar {
+  margin-left: 18%;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: auto;
+  align-self: stretch;
+  background-color: #fff;
+}
+
+/*로그인 파트에 들어있던 CSS*/
+.login-form {
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  margin-bottom: auto;
+}
+
+.login-form h1 {
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  /* margin-bottom: 60px; */
+}
+
+.login-form h2 {
+  font-size: 18px;
+  color: #ebb434;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.int-area {
+  width: 400px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.int-area:first-child {
+  margin-top: 0;
+}
+
+.int-area input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  color: #2e2e2e;
+  outline: none;
+}
+
+.int-area label {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 18px;
+  color: #999;
+  transition: all 0.5s ease;
+}
+
+.int-area label.warning {
+  color: red !important;
+  animation: warning 0.3s ease;
+  animation-iteration-count: 3;
+}
+
+@keyframes warning {
+  0% {
+    transform: translateX(-8px);
+  }
+
+  25% {
+    transform: translateX(8px);
+  }
+
+  50% {
+    transform: translateX(-8px);
+  }
+
+  75% {
+    transform: translateX(8px);
+  }
+}
+
+.int-area input:focus+label,
+.int-area input:valid+label {
+  top: -2px;
+  font-size: 13px;
+  color: #ebb434;
+}
+
+.img-button {
+  background: url("backBtn.svg") no-repeat;
+  border: none;
+  width: 70px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.center {
+  margin-left: 18%;
+  width: 60%;
+  margin-bottom: auto;
+  z-index: 2;
+}
+.center h1 {
+  font-size: 20px;
+  color: #ebb434;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.center h2 {
+  font-size: 18px;
+  color: #ebb434;
+  text-align: center;
+  margin-right: 10%;
+  margin-bottom: 20px;
+}
+.center h3 {
+  font-size: 16px;
+  color: #ebb434;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.center p {
+  color: #404040;
+  font-size: 18px;
+  margin-left: 40%;
+  width: 100%;
+}
+
+/*score css 추가부분*/
+
+.smallWidth{ /*here!*/
+  width: 26%;
+  margin-left: 10%;
+}
+
+.score_img{ /*here!*/
+  width: 60%;
+  margin-left: 15%;
+  position: relative;
+}
+
+/*기본 버튼색 지정*/
+:root {
+  --button-color: #000;
+  --button-bg-color: #fff;
+}
+
+.confirm-button {
+  margin-left: 60%;
+  margin-bottom: auto;
+}
+
+.confirm-button button {
+  width: 200px;
+  height: 50px;
+  background: var(--button-bg-color);
+  font-size: 20px;
+  color: var(--button-color);
+  border: 2px solid #ebb434;
+  border-radius: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  cursor: pointer; /* 위에 커서 놓았을 때 커서 모양 */
+}
+
+/*2 html의 버튼 - 다시 작사하기*/
+.confirm-button button.re {
+  --button-bg-color: #ebb434; --button-color:#fff;
+}
+
+.int-area input {
+  width: 100%;
+  padding: 20px 10px 10px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-size: 18px;
+  color: #000;
+  outline: none;
+}
+
+.int-area label {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  font-size: 18px;
+  color: #999;
+  transition: all 0.5s ease;
+}
+.int-area label.warning {
+  color: red !important;
+  animation: warning 0.3s ease;
+  animation-iteration-count: 3;
+}
+@keyframes warning {
+  0% {
+    transform: translateX(-8px);
+  }
+  25% {
+    transform: translateX(8px);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+  75% {
+    transform: translateX(8px);
+  }
+}
+.int-area textarea {
+  width: 100%;
+  height: 300px;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+}
+
+.int-area textarea:focus+label,
+.int-area textarea:valid+label {
+  top: -2px;
+  font-size: 13px;
+  color: #ebb434;
+}
+
+/*1 html*/
+
+.score {
+  width:auto;
+  float:left;
+  padding-right:30px;
+}
+
+.score img {
+  max-width:512px;
+  height:auto;
+}
+
+.lyrics {
+  display:inline-block;
+  width:auto; 
+  padding-right:30px;
+}
+
+.lyrics p {
+  color:#999;
+}
+
+/*2 html*/
+.lyrics2 {
+  display:inline-block;
+  width:auto; 
+  padding-right:30px;
+}
+
+/*
+3.html추가
+*/
+
+.final_score {
+  width: 50%;
+  height: 100%;
+  float: left;
+  background: white;
+  margin-right: 5%;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.final_score img {
+  margin-top: 3%;
+  max-width: 100%;
+}
+
+.final_info {
+  display: inline-block;
+  width: 40%;
+  padding-right: 30px;
+}
+
+.final_info h1 {
+  color: #2e2e2e;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.int-area textarea {
+  border-radius: 10px;
+  background: white;
+  color: #2e2e2e;
+}
+.bgWhite{
+  border-radius: 10px;
+  background: white;
+  color: #2e2e2e;
+  margin-bottom: 15px;
+  padding-right: 20px;
+  
+}
+.lyricWhite{
+  background: white;
+  padding: 30px 50px 30px 50px;
+}
+.final_confirm{
+  padding-top: 3%;
+  padding-left: 18%;
+}

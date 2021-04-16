@@ -1,0 +1,1 @@
+React -> client -> src 내에 있는 Components 폴더와 css 폴더
