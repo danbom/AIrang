@@ -22,6 +22,9 @@ class Navigator extends Component {
 } 
 
   render () {
+
+    const userName = 'USER';
+    
     return (
       <div>
           {/*네비게이션 바*/}
@@ -30,7 +33,7 @@ class Navigator extends Component {
               AIrang
             </div>
             <div className="welcome">
-              USER 님, 환영합니다!
+              {userName} 님, 환영합니다!
             </div>
             <div className="profile_playing">
               <img className="profile_img" src={profile_img} />
