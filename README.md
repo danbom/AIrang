@@ -94,6 +94,13 @@
 4️⃣   &nbsp;&nbsp;&nbsp;&nbsp;작곡은 MIDI로 결과를 전달해주며, GPT3는 작사한 결과를 TXT로 전달해줍니다. <br><br>
 5️⃣   &nbsp;&nbsp;&nbsp;&nbsp;이를 받아 관리자가 다시 사용자에게 이 창작 결과를 전달하는 것이 전체적인 시스템의 구조입니다. <br><br><br><br><br><br><br>
 
+
+#
+<h2>our Award Performance : <br><br></h2><br>
+
+- 🥉 창업 경진 대회 장려상
+- 🥉 포스터 세션 장려상<br><br><br><br><br>
+
 #
 <h2>Contact Us : <br><br></h2><br>
 
