@@ -83,7 +83,34 @@
 > 작곡 파트<br>
 </br>
 
-추가해주세용<br><br><br><br><br>
+- [x] 동요 Data Set 수집<br><br>
+  악보이미지와 동요 음원을 다운받아 182곡의 동요를 midi파일로 변환했습니다.<br>
+  이후 182곡의 midi파일을 모델에 학습시킬 수 있는 NoteSequence로 변환하여 tfrecord파일로 변환하였습니다. <br><br><br>
+  
+ - [x] Google Magenta <br><br>
+  마젠타는 구글에서 제공하는 오픈 소스 머신 러닝 라이브러리로 음악, 이미지, 그림을 생성하는 딥러닝 알고리즘을 제공합니다.<br>
+  작곡에는 RNN 중 LSTM language 모델을 이용하여 작곡을 하는 하나의 노트(음표)를 생성할 때 이전 멜로디 구성을 반영하여 음악의 특성을 반영합니다.<br>
+  LSTM은 네트워크가 정보를 오랜 시간동안 기억하는 모델이기 때문에 연속된 데이터의 구조인 음악 작곡에 알맞다고 판단되어 동요 작곡에 알맞다고 판단되었습니다.<br>
+  https://github.com/magenta/magenta<br><br><br>
+  
+ - [x] Magenta - MelodyRnn<br><br>
+  tfrecord 형식으로 변환된 동요를 MelodyRnn모델에 학습시켰습니다.<br>
+  eval_ratio=0.1로 설정하여 train_data/eval_data를 나누었습니다.<br>
+  Input으로 num_steps, primer_melody(첫음 이나 midi), temperature 등을 넣어주어 다양한 결과물에 대한 시도를 할 수 있었습니다.<br><br><br>
+  
+ - [x] Magenta - ImprovRnn<br><br>
+  MelodyRnn에서 코드 진행이 추가된 모델로, 생성하는 step마다 input으로 주어진 코드에 따라 멜로디 음을 생성하는 모델입니다.<br>
+  코드의 진행에는 1000개 이상의 곡을 학습한 Chord Pitches Improv configuration을 사용하였습니다.<br>
+  Input으로 backing_chord(eg.CCGCCCGC - 산토끼의 코드진행)를 입력해주었는데, 동요에서 주로 사용되는 코드진행을 입력해주었습니다.<br><br><br>
+  
+  - [x] Magenta-js <br><br>
+  웹페이지 생성을 위해 Magenta-js를 통해 웹구현에서 작곡을 진행하였습니다.<br>
+  https://github.com/magenta/magenta-js<br><br><br>
+  
+   - [x] 작곡의 Validation <br><br>
+  작사와 마찬가지로 창작AI의 결과물에 대한 validation을 표절의 여부에 따라 확인하였습니다.<br>
+  Magenta 모델에서 음을 생성하는 경우의 수와 이 음의 구성이 기존의 음의 구성과 3마디이상 일치할 확률을 구했을 때, 0%에 수렴하는 것을 기반으로 validation을 진행하였습니다.<br><br><br>
+  
 
 #
 <h2>AIrang project architecture : <br><br></h2><br>
