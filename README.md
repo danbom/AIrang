@@ -141,7 +141,7 @@
   - ✉ bear0369@ewhain.net
   - 🖥️ https://blog.naver.com/bear0369<br><br>
 * 정혜민
-  - ✉ heyhmin@ewhain.ne
+  - ✉ heyhmin@ewhain.net
   - 🖥️ https://codeinleonis.tistory.com/<br><br><br><br><br>
 
 
